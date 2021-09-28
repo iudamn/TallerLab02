@@ -1,3 +1,3 @@
 Taller Laboratorio número 2
-Camila Cartes
-Gustavo Calderon
+Camila Cartes:Metodos
+Gustavo Calderon:Pruebas Unitarias
