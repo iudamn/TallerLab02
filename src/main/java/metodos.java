@@ -11,15 +11,17 @@ public class metodos {
 
     }
 
-    public static int elegirNumero(){
+    public static int elegirNumero(int a){
         int numero = (int) (Math.random() * 10) + 2;
         generarArreglo(numero);
         return numero;
     }
 
+
     public static int[] generarArreglo(int numero){
         for(int i=0; i<numero; i++){
-            System.out.print("["+numero[i]+"]");
+            System.out.print("["+numero()[i]+"]");
+
         }
     }
 }
