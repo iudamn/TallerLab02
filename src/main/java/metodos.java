@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class metodos {
 
     public static void menu(){
@@ -7,8 +9,19 @@ public class metodos {
         elegirOpcion();
     }
 
-    public static int elegirOpcion(){
+    public static void elegirOpcion(){
+        Scanner teclado = new Scanner(System.in);
+        int opcion = teclado.nextInt();
 
+        switch(opcion) {
+            case 1:
+                elegirNumero();
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+        }
     }
 
     public static int elegirNumero(){
@@ -18,8 +31,13 @@ public class metodos {
     }
 
     public static int[] generarArreglo(int numero){
-        for(int i=0; i<numero; i++){
-            System.out.print("["+numero[i]+"]");
+        int index=0;
+        int[] valor = new int[numero];
+        while(index<numero){
+            int aleatorio = (int)(Math.random() * 100)+0;
         }
+        visualizarArreglo();
+        return valor;
     }
+
 }
