@@ -36,8 +36,15 @@ public class metodos {
         while(index<numero){
             int aleatorio = (int)(Math.random() * 100)+0;
         }
-        visualizarArreglo();
+        visualizarArreglo(valor);
         return valor;
+    }
+
+    private static void visualizarArreglo(int[]valor) {
+        for(int i=0;i< valor.length;i++){
+            System.out.println("["+valor[i]+"]");
+        }
+
     }
 
 }
