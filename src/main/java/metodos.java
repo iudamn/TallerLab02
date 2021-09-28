@@ -1,3 +1,14 @@
 public class metodos {
-    System.out.println("Probar");
+
+    public static int elegirNumero(){
+        int numero = (int) (Math.random() * 10) + 2;
+        generarArreglo();
+        return numero;
+    }
+
+    public static int[] generarArreglo(){
+        for(){
+
+        }
+    }
 }
