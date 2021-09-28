@@ -40,11 +40,19 @@ public class metodos {
         return valor;
     }
 
-    private static void visualizarArreglo(int[]valor) {
+    public static void visualizarArreglo(int[] valor) {
+        int result=0;
         for(int i=0;i< valor.length;i++){
             System.out.println("["+valor[i]+"]");
         }
 
+        for (int i = 0; i <valor.length-1; i ++) {
+            for (int t = i + 1; t < valor.length; t++) {
+                if (Math.abs(valor[i] - valor[t]) == 1)
+                    result++;
+            }
+        }
+        System.out.println(result);
     }
 
 }
